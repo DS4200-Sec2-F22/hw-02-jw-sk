@@ -17,6 +17,7 @@ table {
 tr { 
   border: solid;
   border-width: 1px 0;
+  text-align: center;
 }
 
 .flex-container {
