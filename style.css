@@ -6,8 +6,18 @@ body {
    text-align: center;
 }
 
-#table_header {
-   bgcolor: lightblue;
+th {
+   background-color: blue;
+   font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr { 
+  border: solid;
+  border-width: 1px 0;
 }
 
 .flex-container {
