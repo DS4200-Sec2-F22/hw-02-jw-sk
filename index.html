@@ -26,121 +26,119 @@
 
                     <td>UFO</td>
                     <td><a href="https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download">https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download</link></td>
-                    <td>Table</td>
-                </tr>
-                <tr>
+                        <td>Table</td>
+                    </tr>
+                    <tr>
 
-                    <td>Airports</td>
-                    <td><a href="https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true">https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true</link></td>
-                    <td>Geometry</td>
-                </tr>
-                <tr>
-                    <td>Google-Web</td>
-                    <td><a href="https://snap.stanford.edu/data/web-Google.html">https://snap.stanford.edu/data/web-Google.html</link></td>
-                    <td>Network</td>
-                </tr>
-            </table>
+                        <td>Airports</td>
+                        <td><a href="https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true">https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true</link></td>
+                            <td>Geometry</td>
+                        </tr>
+                        <tr>
+                            <td>Google-Web</td>
+                            <td><a href="https://snap.stanford.edu/data/web-Google.html">https://snap.stanford.edu/data/web-Google.html</link></td>
+                                <td>Network</td>
+                            </tr>
+                        </table>
 
-        </div>
+                    </div>
 
-        <div class="info">
-            <h1 class="header">Data Types</h1>
+                    <div class="info">
+                        <h1 class="header">Data Types</h1>
 
-            <h2>UFO</h2>
+                        <h2>UFO</h2>
 
-            <ul>
+                        <ul>
 
-              <li>Items</li>
-              <li>Attributes</li>
-              
-              <ul>
-                  <li>datetime (Ordered, Quantitative)</li>
-                  <li>city (Categorical)</li>
-                  <li>state (Categorical)</li>
-                  <li>country (Categorical)</li>
-                  <li>shape (Categorical)</li>
-                  <li>duration (Ordered, Quantitative)</li>
-              </ul>
-          </ul>
+                          <li>Items</li>
+                          <li>Attributes</li>
 
-          <h2>Airports</h2>
-          
-          <ul>
-              <li>Items</li>
-              <li>Positions</li>
+                          <ul>
+                              <li>datetime (Ordered, Quantitative)</li>
+                              <li>city (Categorical)</li>
+                              <li>state (Categorical)</li>
+                              <li>country (Categorical)</li>
+                              <li>shape (Categorical)</li>
+                              <li>duration (Ordered, Quantitative)</li>
+                          </ul>
+                      </ul>
 
-              <ul>
-                  <li>Represented by numbers (Ordered, Quantitative) for two columns: latitude and longitude</li>
-              </ul>
-          </ul>
+                      <h2>Airports</h2>
 
-          <h2>Google-Web</h2>
-          
-          <ul>
-              <li>Items (Nodes)</li>
-              <li>Links</li>
+                      <ul>
+                          <li>Items</li>
+                          <li>Positions</li>
 
-              <ul>
-                  <li>Represented by pairs of points</li>
-              </ul>
-          </ul>
+                          <ul>
+                              <li>Represented by numbers (Ordered, Quantitative) for two columns: latitude and longitude</li>
+                          </ul>
+                      </ul>
 
+                      <h2>Google-Web</h2>
+
+                      <ul>
+                          <li>Items (Nodes)</li>
+                          <li>Links</li>
+
+                          <ul>
+                              <li>Represented by pairs of points</li>
+                          </ul>
+                      </ul>
+
+                  </div>
+              </div>
+
+              <h1 class="header">Task Abstraction</h1>
+              <div class="flex-container">
+                <div class="row">
+                    <div class = "column">
+                        <img src="img/vis1.png" class="center" 
+                        width="450" height="500">
+                        <ul class = "list">
+                          <li>High Level: Record</li>
+                          <li>Medium Level: Lookup</li>
+                          <li>Low Level: Identify</li>
+                          <li>Targets: All data -> Trends</li>
+                      </ul>
+                  </div>
+                  <div class="column">
+                    <img src="img/vis2.png" class="center"
+                    width="450" height="500">
+                    <ul class = "list">
+                      <li>High Level: Derive</li>
+                      <li>Medium Level: Locate</li>
+                      <li>Low Level: Compare</li>
+                      <li>Target: Attributes -> Similarity</li>
+                  </ul>
+              </div>
+          </div>
       </div>
-  </div>
 
-  <h1 class="header">Task Abstraction</h1>
-  <div class="flex-container">
-    <div class="row">
-        <div class = "column">
-            <img src="img/vis1.png" class="center" 
-            width="450" height="500">
-            <ul class = "list">
-              <li>High Level: Record</li>
-              <li>Medium Level: Lookup</li>
-              <li>Low Level: Identify</li>
-              <li>Targets: All data -> Trends</li>
-          </ul>
-      </div>
-      <div class="column">
-        <img src="img/vis2.png" class="center"
-        width="450" height="500">
-        <ul class = "list">
-          <li>High Level: Derive</li>
-          <li>Medium Level: Locate</li>
-          <li>Low Level: Compare</li>
-          <li>Target: Attributes -> Similarity</li>
-      </ul>
-  </div>
-</div>
-</div>
+      <div id="decoration"></div>
+      <svg viewBox="0 0 60 55" preserveAspectRatio="xMidYMin slice"
+      style="width: 100%; padding-bottom: 35%; height: 1px; overflow: visible">
+      <rect class = "my_rect" x="5" y="10" width="7" height="5"/>
+      <circle class = "my_circle" cx="19.5" cy="12.5" r="2.5" />
+      <rect class = "my_rect" x="27" y="10" width="7" height="5"/>
+      <circle class = "my_circle" cx="41.5" cy="12.5" r="2.5" />
+      <rect class = "my_rect" x="49" y="10" width="7" height="5"/>
+  </svg>
 
-<div id="decoration"></div>
-<svg viewBox="0 0 60 55" preserveAspectRatio="xMidYMin slice"
-style="width: 100%; padding-bottom: 35%; height: 1px; overflow: visible">
-<rect class = "my_rect" x="5" y="10" width="7" height="5"/>
-<circle class = "my_circle" cx="19.5" cy="12.5" r="2.5" />
-<rect class = "my_rect" x="27" y="10" width="7" height="5"/>
-<circle class = "my_circle" cx="41.5" cy="12.5" r="2.5" />
-<rect class = "my_rect" x="49" y="10" width="7" height="5"/>
-</svg>
+  <h1 class="header">Acknowledgements</h1>
 
-<h1 class="header">Acknowledgements</h1>
+  <div id="resources">
 
-<div id="resources">
+    <ul>
+        
+        <li>https://www.w3schools.com/html/html_tables.asp</li>
+        <li>https://www.w3schools.com/html/html_lists.asp</li>
+        <li>https://www.geeksforgeeks.org/html-th-bgcolor-attribute/</li>
+        <li>https://learn-the-web.algonquindesign.ca/topics/advanced-svg/</li>
+        <li>https://stackoverflow.com/questions/13624276/how-to-separate-table-rows-with-a-line</li>
+        <li>https://stackoverflow.com/questions/53683552/how-can-i-change-the-background-color-in-table-header-and-fix-the-header-in-html</li>
+        <li>https://www.w3schools.com/howto/howto_css_table_full_width.asp</li>
 
-    <p>https://www.w3schools.com/html/html_tables.asp</p>
-
-    <p>https://www.w3schools.com/html/html_lists.asp</p>
-
-    <p>https://www.geeksforgeeks.org/html-th-bgcolor-attribute/</p>
-
-    <p>https://learn-the-web.algonquindesign.ca/topics/advanced-svg/</p>
-
-    <p>https://stackoverflow.com/questions/13624276/how-to-separate-table-rows-with-a-line</p>
-
-    <p>https://stackoverflow.com/questions/53683552/how-can-i-change-the-background-color-in-table-header-and-fix-the-header-in-html</p>
-
-    <p>https://www.w3schools.com/howto/howto_css_table_full_width.asp</p>
+    </ul>
 
 </div>
 
