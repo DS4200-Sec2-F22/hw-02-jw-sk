@@ -1,7 +1,54 @@
-   body {
-      font-family: Arial;
-   }
+body {
+   font-family: Arial;
+}
 
-   .header {
-      text-align: center;
-   }
+.header {
+   text-align: center;
+}
+
+.flex-container {
+ margin: 15px;
+ background-color: white;
+}
+
+.row {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+.column {
+ display: flex;
+ flex-direction: column;
+ flex-basis: 100%;
+ flex: 1;
+ border-left: 2px solid black;
+ border-right: 2px solid black;
+ border-top: 2px solid black;
+ border-bottom: 2px solid black;
+}
+
+.list {
+   color: darkgreen;
+} 
+
+.my_circle {
+   fill: lightblue;
+   opacity: 0.5;
+}
+
+.my_circle:hover {
+   stroke: darkgreen;
+   stroke-width: 0.1px;
+}
+
+.my_rect {
+   fill:  lightblue;
+   stroke: darkgreen;
+   stroke-width: 0.1px;
+}
+
+.my_rect:hover {
+ fill: lightpink;
+}
