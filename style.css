@@ -6,6 +6,10 @@ body {
    text-align: center;
 }
 
+#table_header {
+   bgcolor: blue;
+}
+
 .flex-container {
  margin: 15px;
  background-color: white;
